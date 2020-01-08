@@ -20,7 +20,7 @@ class Pin extends React.Component {
             <img src={pin.imageUrl} alt={pin.name} />
           </div>
         <div className="card-footer">
-          <p><a href={pin.url}>View Pin</a></p>
+          <p><a href={pin.url}>VIEW PIN</a> | <button className="btn btn-link">DELETE PIN</button></p>
         </div>
         </div>
       </div>

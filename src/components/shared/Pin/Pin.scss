@@ -1,0 +1,12 @@
+.Pin {
+  width: 300px;
+  padding: 10px;
+  margin:20px;
+  .image-container {
+    width: 100%;
+    margin-bottom: 40px;
+    img {
+      width:100%;
+    }
+  }
+}

@@ -43,7 +43,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
-
+    this.removeListener();
   }
 
   render() {

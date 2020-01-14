@@ -32,7 +32,7 @@ class Home extends React.Component {
       <div className="Home">
         <h1>Home Page</h1>
         <div className="boards d-flex flex-wrap justify-content-center">
-          {this.state.boards.map((board) => <Board key={boardData.id} board={board} deleteBoard={this.deleteBoard} />)}
+          {this.state.boards.map((board) => <Board key={board.id} board={board} deleteBoard={this.deleteBoard} />)}
         </div>
       </div>
     );

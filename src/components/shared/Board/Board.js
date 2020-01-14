@@ -25,6 +25,7 @@ class Board extends React.Component {
       <div className="Board card align-middle">
         <div className="card-body">
           <button className="btn btn-danger" onClick={this.deleteBoardEvent}>X</button>
+          <Link className="btn btn-warning" to={`/board/${board.id}/edit`}>EDIT</Link>
           <h1 className="card-title">{board.name}</h1>
           <Link className="btn btn-primary" to={`/board/${board.id}`}>View Board</Link>
         </div>

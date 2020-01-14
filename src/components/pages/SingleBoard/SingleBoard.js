@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import Pin from '../../shared/Pin/Pin';
 
 import boardData from '../../../helpers/data/boardData';
@@ -37,13 +37,14 @@ class SingleBoard extends React.Component {
   }
 
   render() {
-    // const { boardId } = this.props.match.params;
+    const { boardId } = this.props.match.params;
     const { board } = this.state;
     return (
       <div className="SingleBoard">
         <h1>{board.name}</h1>
+        <Link className="btn btn-primary" to={`/board/${boardId}/pin/new`}>ADD A PIN</Link>
         <div className="d-flex flex-wrap justify-content-center">
-        {this.state.pins.map((pin) => <Pin key={pinData.id} pin={pin} deletePin={this.deletePin} />)}
+        {this.state.pins.map((pin) => <Pin key={pin.id} pin={pin} deletePin={this.deletePin} />)}
         </div>
       </div>
     );
